@@ -1,5 +1,7 @@
 function [acc, kappa, f1, sens, spec, classwise_sens, classwise_sel, C] = eval_e2e_arnn()
 
+    addpath('./evaluation/');
+
     Ncat = 5;
     Nfold = 20;
     yh = cell(Nfold,1);
