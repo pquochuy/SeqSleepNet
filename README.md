@@ -3,7 +3,7 @@
 
 These are source code and experimental setup for the __MASS database__, used in our above arXiv preprint. Although the networks have many things in common, we try to separate them and to make them work independently to ease exploring them invididually.
 
-Currently, _E2E-ARNN_ and _Multitask E2E-ARNN_ baselines are available. We are currently cleaning others and and will update them very shortly.
+Currently, _SeqSleepNet_, _E2E-ARNN_ and _Multitask E2E-ARNN_ baselines are available (_E2E-DeepSleepNet_ baseline is still missing, we will clean it up and make it available shortly). Output of t nheetworks are also included, so that you can re-produce the results with the evaluation scripts. However, you can repeat the experiments following the steps below. 
 
 How to run:
 -------------
@@ -13,11 +13,11 @@ How to run:
 - Change directory to `./data_processing/`
 - Run `main_run.m`
 3. Network training and testing
-- Change directory to a specific network in `./tensorflow_net/`, for example `./tensorflow_net/E2E-ARNN/`
-- Run a bash script, i.e. `bash run.sh`, to repeat 20 cross-validation folds.  
+- Change directory to a specific network in `./tensorflow_net/`, for example `./tensorflow_net/SeqSleepNet/`
+- Run a bash script, e.g. `bash run_seq20.sh`, to repeat 20 cross-validation folds.  
 _Note1:_ You may want to modify and script to make use of your computational resources, such as place a few process them on multiple GPUs. If you want to run multiple processes on a single GPU, you may want to modify the Tensorflow source code to change __GPU options__ when initializing a Tensorflow session. 
 4. Evaluation
-- Execute a specific evaluation Matlab script, for example `eval_e2e_arnn.m`
+- Execute a specific evaluation Matlab script, for example `eval_seqsleepnet.m`
 
 Environment:
 -------------
