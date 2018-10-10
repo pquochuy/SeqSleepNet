@@ -3,7 +3,7 @@
 
 These are source code and experimental setup for the __MASS database__, used in our above arXiv preprint. Although the networks have many things in common, we try to separate them and to make them work independently to ease exploring them invididually.
 
-- __MASS database__ is available here [here](https://massdb.herokuapp.com/en/). You need to download the database to run the experiments again. Information on how to obtain it can be found therein.
+- __MASS database__ is available [here](https://massdb.herokuapp.com/en/). You need to download the database to run the experiments again. Information on how to obtain it can be found therein.
 
 Currently, _E2E-ARNN_ and _E2E-MultitaskARNN_ baselines are availabel. We are currently cleaning others and and will update them very shortly.
 
