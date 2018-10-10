@@ -3,7 +3,7 @@
 
 These are source code and experimental setup for the __MASS database__, used in our above arXiv preprint. Although the networks have many things in common, we try to separate them and to make them work independently to ease exploring them invididually.
 
-Currently, _SeqSleepNet_, _E2E-ARNN_ and _Multitask E2E-ARNN_ baselines are available (_E2E-DeepSleepNet_ baseline is still missing, we will clean it up and make it available shortly). Output of t nheetworks are also included, so that you can re-produce the results with the evaluation scripts. However, you can repeat the experiments following the steps below. 
+Currently, _SeqSleepNet_ and two baselines _E2E-ARNN_ and _Multitask E2E-ARNN_ are available (_E2E-DeepSleepNet_ baseline is still missing, we will clean it up and make it available shortly). Output of t nheetworks are also included, so that you can re-produce the results with the evaluation scripts. However, you can repeat the experiments following the steps below. 
 
 How to run:
 -------------
