@@ -3,7 +3,7 @@
 
 These are source code and experimental setup for the __MASS database__, used in our above arXiv preprint. Although the networks have many things in common, we try to separate them and to make them work independently to ease exploring them invididually.
 
-Currently, _E2E-ARNN_ and _E2E-MultitaskARNN_ baselines are availabel. We are currently cleaning others and and will update them very shortly.
+Currently, _E2E-ARNN_ and _Multitask E2E-ARNN_ baselines are availabel. We are currently cleaning others and and will update them very shortly.
 
 How to run:
 -------------
