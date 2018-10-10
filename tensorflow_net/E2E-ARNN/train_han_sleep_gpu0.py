@@ -50,7 +50,6 @@ tf.app.flags.DEFINE_integer("nfilter", 20, "Sequence length (default: 20)")
 
 tf.app.flags.DEFINE_integer("nhidden1", 64, "Sequence length (default: 20)")
 tf.app.flags.DEFINE_integer("attention_size1", 32, "Sequence length (default: 20)")
-tf.app.flags.DEFINE_integer("nhidden2", 64, "Sequence length (default: 20)")
 
 FLAGS = tf.app.flags.FLAGS
 print("\nParameters:")
@@ -74,7 +73,6 @@ config.epoch_seq_len = FLAGS.seq_len
 config.epoch_step = FLAGS.seq_len
 config.nfilter = FLAGS.nfilter
 config.nhidden1 = FLAGS.nhidden1
-config.nhidden2 = FLAGS.nhidden2
 config.attention_size1 = FLAGS.attention_size1
 
 eeg_active = ((FLAGS.eeg_train_data != "") and (FLAGS.eeg_test_data != ""))
@@ -286,21 +284,21 @@ with tf.Graph().as_default():
             output_loss =0
             total_loss = 0
             yhat = np.zeros([len(gen.data_index)])
-            num_batch_per_epoch = np.floor(len(gen.data_index) / (10*config.batch_size)).astype(np.uint32)
+            num_batch_per_epoch = np.floor(len(gen.data_index) / (config.batch_size)).astype(np.uint32)
             test_step = 1
             while test_step < num_batch_per_epoch:
-                x_batch, y_batch, label_batch_ = gen.next_batch(10*config.batch_size)
+                x_batch, y_batch, label_batch_ = gen.next_batch(config.batch_size)
                 output_loss_, total_loss_, yhat_ = dev_step(x_batch, y_batch)
                 output_loss += output_loss_
                 total_loss += total_loss_
 
-                yhat[(test_step-1)*10*config.batch_size : test_step*10*config.batch_size] = yhat_
+                yhat[(test_step-1)*config.batch_size : test_step*config.batch_size] = yhat_
                 test_step += 1
             if(gen.pointer < len(gen.data_index)):
                 actual_len, x_batch, y_batch, label_batch_ = gen.rest_batch(config.batch_size)
                 output_loss_, total_loss_, yhat_ = dev_step(x_batch, y_batch)
 
-                yhat[(test_step-1)*10*config.batch_size : len(gen.data_index)] = yhat_
+                yhat[(test_step-1)*config.batch_size : len(gen.data_index)] = yhat_
                 output_loss += output_loss_
                 total_loss += total_loss_
             yhat = yhat + 1

@@ -47,7 +47,6 @@ tf.app.flags.DEFINE_integer("nfilter", 20, "Sequence length (default: 20)")
 
 tf.app.flags.DEFINE_integer("nhidden1", 64, "Sequence length (default: 20)")
 tf.app.flags.DEFINE_integer("attention_size1", 32, "Sequence length (default: 20)")
-tf.app.flags.DEFINE_integer("nhidden2", 64, "Sequence length (default: 20)")
 
 FLAGS = tf.app.flags.FLAGS
 print("\nParameters:")
@@ -71,7 +70,6 @@ config.epoch_seq_len = FLAGS.seq_len
 config.epoch_step = FLAGS.seq_len
 config.nfilter = FLAGS.nfilter
 config.nhidden1 = FLAGS.nhidden1
-config.nhidden2 = FLAGS.nhidden2
 config.attention_size1 = FLAGS.attention_size1
 
 eeg_active = ((FLAGS.eeg_train_data != "") and (FLAGS.eeg_test_data != ""))

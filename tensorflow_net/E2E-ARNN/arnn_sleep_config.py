@@ -19,8 +19,8 @@ class Config(object):
         self.nhidden1 = 64
         self.nlayer1 = 1
         self.attention_size1 = 32
-        self.nhidden2 = 64
-        self.nlayer2 = 1
+        #self.nhidden2 = 64
+        #self.nlayer2 = 1
 
         self.nfilter = 20
         self.nfft = 256
