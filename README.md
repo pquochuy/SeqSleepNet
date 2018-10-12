@@ -7,7 +7,7 @@ Currently, _SeqSleepNet_ and two baselines _E2E-ARNN_ and _Multitask E2E-ARNN_ a
 
 How to run:
 -------------
-1. Download the databases
+1. Download the database
 - __MASS database__ is available [here](https://massdb.herokuapp.com/en/). Information on how to obtain it can be found therein.
 2. Data preparation
 - Change directory to `./data_processing/`
