@@ -31,5 +31,5 @@ Huy Phan
 Institute of Biomedical Engineering  
 Department of Engineering Science  
 University of Oxford  
-Email: huy.phan{at}eng.ox.ac.uk
+Email: huy.phan{at}ieee.org
 
