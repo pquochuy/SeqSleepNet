@@ -33,10 +33,10 @@ Institute of Biomedical Engineering
 Department of Engineering Science  
 University of Oxford  
 Email: huy.phan{at}ieee.org
-
-or 
-
-School of Computing
-University of Kent
-Email: h.phan{at}kent.ac.uk
+  
+or  
+  
+School of Computing  
+University of Kent  
+Email: h.phan{at}kent.ac.uk  
 
