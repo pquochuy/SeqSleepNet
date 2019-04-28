@@ -1,5 +1,5 @@
 # SeqSleepNet
-- Huy Phan, Fernando Andreotti, Navin Cooray, Oliver Y. Chén, and Maarten De Vos. [__SeqSleepNet: End-to-End Hierarchical Recurrent Neural Network for Sequence-to-Sequence Automatic Sleep Staging.__](https://arxiv.org/pdf/1809.10932) _IEEE Transactions on Neural Systems and Rehabilitation Engineering (TNSRE)_, vol. 27, no. 3, pp. 400-410, 2019
+- Huy Phan, Fernando Andreotti, Navin Cooray, Oliver Y. Chén, and Maarten De Vos. [__SeqSleepNet: End-to-End Hierarchical Recurrent Neural Network for Sequence-to-Sequence Automatic Sleep Staging.__](https://arxiv.org/pdf/1809.10932) _IEEE Transactions on Neural Systems and Rehabilitation Engineering (TNSRE)_, vol. 27, no. 3, pp. 400-410, 2019<br/><span style="color:red">*(Highlighted in the publish issue: [Link](https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=8672791))*</span>
 
 ![SeqSleepNet](figure/seqsleepnet.png)
 
