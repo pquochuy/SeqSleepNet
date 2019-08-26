@@ -52,3 +52,6 @@ School of Computing
 University of Kent  
 Email: h.phan{at}kent.ac.uk  
 
+License
+-------------
+MIT © Huy Phan
