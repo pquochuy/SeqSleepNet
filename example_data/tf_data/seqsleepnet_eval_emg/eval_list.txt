@@ -1,0 +1,2 @@
+../../example_data/mat/s5_seqsleepnet_emg.mat	1013
+../../example_data/mat/s6_seqsleepnet_emg.mat	1106

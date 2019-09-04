@@ -1,0 +1,2 @@
+../../example_data/mat/s1_seqsleepnet_eeg.mat	918
+../../example_data/mat/s3_seqsleepnet_eeg.mat	1050
