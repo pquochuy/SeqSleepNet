@@ -17,15 +17,25 @@ How to run:
 3. Network training and testing
 - Change directory to a specific network in `./tensorflow_net/`, for example `./tensorflow_net/SeqSleepNet/`
 - Run a bash script, e.g. `bash run_seq20.sh`, to repeat 20 cross-validation folds.  
-_Note1:_ You may want to modify and script to make use of your computational resources, such as place a few process them on multiple GPUs. If you want to run multiple processes on a single GPU, you may want to modify the Tensorflow source code to change __GPU options__ when initializing a Tensorflow session. 
 4. Evaluation
 - Execute a specific evaluation Matlab script, for example `eval_seqsleepnet.m`
+
+An example:
+-------------
+__Matlab files of the used database can be requested but it's best to request for the orignial MASS database. So far, many told that requests for the database were not responded/took so long. I'd suggest to be patient.__
+
+In order to give an idea about the data structure and how to run the networks, I have added a small example 
+
+1. Matlab files and data list of the example stored in `./example_data/`
+2. Network training and testing
+- Change directory to a specific network in `./tensorflow_net/`, for example `./tensorflow_net/SeqSleepNet/`
+- Run a bash script, e.g. `run_example_seq10_3chan.sh`, to train and test SeqSleepNet-10 with the example data.  
 
 Environment:
 -------------
 - Matlab v7.3 (for data preparation)
 - Python3
-- Tensorflow GPU 1.3.0 (for network training and evaluation)
+- Tensorflow GPU 1.x (x >= 3) (for network training and evaluation)
 
 Some results:
 -------------
