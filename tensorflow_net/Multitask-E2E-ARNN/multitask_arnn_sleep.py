@@ -60,7 +60,7 @@ class Multitask_ARNN_Sleep(object):
                 # non-negative constraints
                 self.Wemg = tf.sigmoid(self.Wemg)
                 # mask matrix should be replaced by shape-specific filter bank, e.g. triangular,rectangle.
-                self.Wfb = tf.multiply(self.Weog,self.Wbl)
+                self.Wfb = tf.multiply(self.Wemg,self.Wbl)
                 HWemg = tf.matmul(Xemg, self.Wfb) # filtering
                 HWemg = tf.reshape(HWemg, [-1, self.config.frame_step, self.config.nfilter])
 
