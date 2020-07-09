@@ -51,16 +51,9 @@ Contact:
 -------------
 Huy Phan 
 
-Institute of Biomedical Engineering  
-Department of Engineering Science  
-University of Oxford  
-Email: huy.phan{at}ieee.org
-  
-or  
-  
-School of Computing  
-University of Kent  
-Email: h.phan{at}kent.ac.uk  
+School of Electronic Engineering and Computer Science  
+Queen Mary University of London
+Email: h.phan{at}qmul.ac.uk
 
 License
 -------------
