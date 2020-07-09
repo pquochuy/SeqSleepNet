@@ -52,8 +52,8 @@ Contact:
 Huy Phan 
 
 School of Electronic Engineering and Computer Science  
-Queen Mary University of London
-Email: h.phan{at}qmul.ac.uk
+Queen Mary University of London  
+Email: h.phan{at}qmul.ac.uk  
 
 License
 -------------
