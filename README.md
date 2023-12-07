@@ -57,4 +57,4 @@ Email: h.phan{at}qmul.ac.uk
 
 License
 -------------
-MIT © Huy Phan
+CC-BY-NC-4.0
